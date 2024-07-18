@@ -1,31 +1,34 @@
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 
+// layouts
+import RootLayout from "./layouts.js/RootLayout";
+import HelpLayout from "./layouts.js/HelpLayout";
+
 // pages
 import Home from "./pages/Home";
 import Jobs from "./pages/Jobs";
+import Faq from "./pages/Faq";
 import Contact from "./pages/Contact";
 
-// layouts
-import RootLayout from "./layouts.js/RootLayout";
-import Faq from "./components/Faq";
-import ContactForm from "./components/ContactForm";
-
-const ourRouter = createBrowserRouter(
+const customRouter = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout/>}>
-      <Route index element={<Home/>}></Route>
-      <Route path="jobs" element={<Jobs/>}></Route>
-      <Route path="contact" element={<Contact/>}>
-        <Route path="faq" element={<Faq/>}/>
-        <Route path="contact-form" element={<ContactForm/>}/>
+    <Route path="/" element={<RootLayout />}>
+
+      <Route index element={<Home />} />
+      <Route path="jobs" element={<Jobs />} />
+
+      <Route path="help" element={<HelpLayout />}>
+        <Route path="faq" element={<Faq/>} />
+        <Route path="contact" element={<Contact/>} />
       </Route>
+
     </Route>
   )
 )
 
 function App() {
   return (
-    <RouterProvider router={ourRouter}/>
+    <RouterProvider router={customRouter} />
   );
 }
 

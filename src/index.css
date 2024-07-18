@@ -9,8 +9,10 @@ html{
 }
 
 :root{
-  --primary: #91ADC2;
-  --secondary: #384955;
+  --primary: #384955;
+  --secondary: #27363b;
+  --hover-color: #91ADC2;
+  --light-colar: #f08080;
   --white: #fff;
   --black: #000;
   --poppins-font: "Poppins", sans-serif;
@@ -78,7 +80,7 @@ a{
 }
 
 a:hover{
-  color: var(--secondary);
+  color: var(--hover-color);
 }
 
 button{
@@ -96,6 +98,40 @@ button{
 button:hover{
   background: var(--light-red);
   color: var(--white);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+textarea,
+select{
+  font-family: var(--poppins-font);
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid var(--white);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+textarea{
+  resize: vertical;
 }
 
 img{
@@ -126,10 +162,21 @@ section {
   font-size: 30px;
 }
 
-.hgroup-wrap nav ul{
+nav ul{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  padding-bottom: 30px;
+}
+
+.hgroup-wrap nav ul{
+  padding-bottom: 15px;
+  border-bottom: 0.1px solid var(--white);
+}
+
+nav a {
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .hgroup-wrap nav a {
@@ -137,27 +184,38 @@ section {
 }
 
 .hgroup-wrap nav a.active{
-  background: var(--secondary);
-  padding: 5px;
+  background: var(--hover-color);
 }
 
 .hgroup-wrap nav a.active:hover{
   color: var(--white);
 }
 
-.contact nav a {
-  margin: 0 10px;
+.help nav a{
+  border: 1px solid var(--white);
 }
 
-.contact nav a.active{
-  color: var(--secondary);
-  font-weight: 600;
+.help nav a:hover, .help nav a.active{
+  background: var(--light-colar);
+  color: var(--white);
 }
 
-.contact nav a:first-child{
-  margin-left: 0;
+.faq-content .question{
+  padding-bottom: 10px;
 }
 
-.contact nav a:last-child{
-  margin-right: 0;
+.input-wrap {
+  margin-bottom: 20px;
+}
+
+.input-wrap label{
+  display: block;
+  padding-bottom: 3px;
+}
+
+.contact {
+  background: var(--secondary);
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
 }

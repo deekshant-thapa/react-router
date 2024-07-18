@@ -11,7 +11,7 @@ export default function Header(){
                     <nav>
                         <ul>
                             <li><NavLink to='/jobs'>Jobs</NavLink></li>
-                            <li><NavLink to='/contact'>Contact Us</NavLink></li>
+                            <li><NavLink to='/help'>Help</NavLink></li>
                         </ul>
                     </nav>
                 </div>

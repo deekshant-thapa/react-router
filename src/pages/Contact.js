@@ -1,17 +1,20 @@
-import { NavLink } from "react-router-dom";
-
-export default function Contact(){
-    return(
-        <section className="contact">
-            <div className="container">
-                <h2>this is a contact page</h2>
-                <p>Below down we have nested routes</p>
-
-                <nav>
-                    <NavLink to='faq'>Faq</NavLink>
-                    <NavLink to='contact-form'>Contact form</NavLink>
-                </nav>
-            </div>
-        </section>
+export default function Contact() {
+    return (
+        <div className="contact">
+            <form action="" className="contact-form">
+                <div className="input-wrap">
+                    <label htmlFor="">Name</label>
+                    <input type="text" name="" id="" />
+                </div>
+                <div className="input-wrap">
+                    <label htmlFor="">Email</label>
+                    <input type="email" name="" id="" />
+                </div>
+                <div className="input-wrap">
+                    <label htmlFor="">Your message</label>
+                    <textarea name="" id=""></textarea>
+                </div>
+            </form>
+        </div>
     )
 }
