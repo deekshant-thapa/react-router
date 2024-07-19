@@ -107,6 +107,7 @@ input[type="email"],
 input[type="tel"],
 input[type="url"],
 input[type="search"],
+input[type="submit"],
 textarea,
 select{
   font-family: var(--poppins-font);
@@ -128,6 +129,17 @@ input[type="url"]:focus,
 select:focus,
 textarea:focus {
   outline: none;
+}
+
+input[type="submit"]{
+  cursor: pointer;
+  width: auto;
+  transition: all 0.2s linear 0s;
+}
+
+input[type="submit"]:hover{
+  background: var(--light-colar);
+  color: var(--white);
 }
 
 textarea{
@@ -218,4 +230,15 @@ nav a {
   padding: 20px;
   border-radius: 5px;
   max-width: 500px;
+}
+
+.not-found a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.job-detail {
+  background: var(--secondary);
+  padding: 15px;
+  margin-bottom: 15px;
 }

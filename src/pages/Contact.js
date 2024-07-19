@@ -14,6 +14,7 @@ export default function Contact() {
                     <label htmlFor="">Your message</label>
                     <textarea name="" id=""></textarea>
                 </div>
+                <input type="submit" value="Submit" />
             </form>
         </div>
     )
