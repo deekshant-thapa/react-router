@@ -237,8 +237,31 @@ nav a {
   text-underline-offset: 2px;
 }
 
-.job-detail {
+.job-detail a{
   background: var(--secondary);
   padding: 15px;
   margin-bottom: 15px;
+  width: 100%;
+  transition: none;
+}
+
+.job-detail a:hover * {
+  color: var(--white);
+}
+
+.job-detail h4{
+  transition: all 0.3s linear 0s;
+}
+
+.job-detail a:hover h4{
+  color: var(--light-colar);
+}
+
+.job-detail span{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.job-detail .location {
+  font-size: 15px;
 }

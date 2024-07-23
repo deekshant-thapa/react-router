@@ -1,0 +1,28 @@
+{
+  "careers": [
+    {
+      "title": "Young Machines",
+      "body": "Arsenal Football Club have several promising young players who are making significant contributions to the team. We have so many young players that are engines in the team and can perform in a great way",
+      "author": "Jack Wilshere",
+      "id": "1"
+    },
+    {
+      "title": "2023 Review",
+      "body": "2023 ended in a great way for the team and players. Arteta's Arsenal is still an unfinished project but 2023 brought out the very best of the Spaniard's process. Progress doesn’t necessarily mean always moving forward, a few stumbles won’t stop this Arsenal side from blooming into a force to be reckoned with.",
+      "author": "Arsenal",
+      "id": "2"
+    },
+    {
+      "id": "9e2c",
+      "title": "Champions League",
+      "body": "Ahead of champions league round of 16 fixtures, arsenal travel to porto for the first leg and second leg will be played at emirates after 15 days. This is the club's first knockout games after 6 years out of the competition.",
+      "author": "arsenal"
+    },
+    {
+      "id": "61a2",
+      "title": "My Footballing Days",
+      "body": "Our own midfielder wilshere was a magic player in his football days.",
+      "author": "wilshere"
+    }
+  ]
+}

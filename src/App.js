@@ -10,7 +10,8 @@ import Home from "./pages/Home";
 import Faq from "./pages/Faq";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import Jobs from "./pages/Jobs";
+import Jobs, { jobsLoader } from "./pages/Jobs";
+import JobDetail, { careerDetailsLoader } from "./pages/JobDetail";
 
 const customRouter = createBrowserRouter(
   createRoutesFromElements(
@@ -20,7 +21,8 @@ const customRouter = createBrowserRouter(
       <Route index element={<Home />} />
 
       <Route path="jobs" element={<JobsLayout />} >
-        <Route index element={<Jobs/>} />
+        <Route index element={<Jobs/>} loader={jobsLoader} />
+        <Route path=":id" element={<JobDetail/>} loader={careerDetailsLoader} />
       </Route>
 
       <Route path="help" element={<HelpLayout />}>
