@@ -3,15 +3,17 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 // layouts
 import RootLayout from "./layouts.js/RootLayout";
 import HelpLayout from "./layouts.js/HelpLayout";
-import JobsLayout from "./layouts.js/JobsLayout";
+import RecipesLayout from "./layouts.js/RecipesLayout";
 
 // pages
 import Home from "./pages/Home";
-import Faq from "./pages/Faq";
-import Contact from "./pages/Contact";
+import Faq from "./pages/Help/Faq";
+import Contact from "./pages/Help/Contact";
 import NotFound from "./pages/NotFound";
-import Jobs, { jobsLoader } from "./pages/Jobs";
-import JobDetail, { careerDetailsLoader } from "./pages/JobDetail";
+import Recipes, { recipesLoader } from "./pages/Recipe/Recipes";
+import RecipeDetail, { recipeDetailsLoader } from "./pages/Recipe/RecipeDetail";
+import RecipeDetailError from "./pages/Recipe/RecipeDetailError";
+import RecipesError from "./pages/Recipe/RecipesError";
 
 const customRouter = createBrowserRouter(
   createRoutesFromElements(
@@ -20,9 +22,9 @@ const customRouter = createBrowserRouter(
 
       <Route index element={<Home />} />
 
-      <Route path="jobs" element={<JobsLayout />} >
-        <Route index element={<Jobs/>} loader={jobsLoader} />
-        <Route path=":id" element={<JobDetail/>} loader={careerDetailsLoader} />
+      <Route path="recipes" element={<RecipesLayout/>} >
+        <Route index element={<Recipes/>} loader={recipesLoader} errorElement={<RecipesError/>} />
+        <Route path=":id" element={<RecipeDetail/>} loader={recipeDetailsLoader} errorElement={<RecipeDetailError/>} />
       </Route>
 
       <Route path="help" element={<HelpLayout />}>

@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import Breadcrumbs from "./components/Breadcrumbs";
 
 export default function Header(){
     return(
@@ -6,15 +7,16 @@ export default function Header(){
             <div className="container">
                 <div className="hgroup-wrap">
                     <div className="site-branding">
-                        <Link to='/'>Jobs Locator</Link>
+                        <Link to='/'>Recipe Finder</Link>
                     </div>
                     <nav>
                         <ul>
-                            <li><NavLink to='/jobs'>Jobs</NavLink></li>
+                            <li><NavLink to='/recipes'>Recipes</NavLink></li>
                             <li><NavLink to='/help'>Help</NavLink></li>
                         </ul>
                     </nav>
                 </div>
+                <Breadcrumbs/>
             </div>
         </header>
     )

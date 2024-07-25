@@ -5,7 +5,7 @@ export default function NotFound() {
     <section className="not-found">
       <div className="container">
         <h3>Page not found</h3>
-        <p>Go back to <Link to="/">Homepage</Link></p>
+        <p>Go back to <Link to="/" className="homepage-redirect">Homepage</Link></p>
       </div>
     </section>
   )
