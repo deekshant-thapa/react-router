@@ -12,8 +12,8 @@ import Contact from "./pages/Help/Contact";
 import NotFound from "./pages/NotFound";
 import Recipes, { recipesLoader } from "./pages/Recipe/Recipes";
 import RecipeDetail, { recipeDetailsLoader } from "./pages/Recipe/RecipeDetail";
-import RecipeDetailError from "./pages/Recipe/RecipeDetailError";
-import RecipesError from "./pages/Recipe/RecipesError";
+import FetchError from "./pages/Recipe/FetchError";
+import FetchErrorSingle from "./pages/Recipe/FetchErrorSingle";
 
 const customRouter = createBrowserRouter(
   createRoutesFromElements(
@@ -23,8 +23,8 @@ const customRouter = createBrowserRouter(
       <Route index element={<Home />} />
 
       <Route path="recipes" element={<RecipesLayout/>} >
-        <Route index element={<Recipes/>} loader={recipesLoader} errorElement={<RecipesError/>} />
-        <Route path=":id" element={<RecipeDetail/>} loader={recipeDetailsLoader} errorElement={<RecipeDetailError/>} />
+        <Route index element={<Recipes/>} loader={recipesLoader} errorElement={<FetchError/>} />
+        <Route path=":id" element={<RecipeDetail/>} loader={recipeDetailsLoader} errorElement={<FetchErrorSingle/>} />
       </Route>
 
       <Route path="help" element={<HelpLayout />}>

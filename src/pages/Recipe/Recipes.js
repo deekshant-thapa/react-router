@@ -26,6 +26,7 @@ export default function Recipes(){
 
 // loader function
 export const recipesLoader = async () => {
+
     const res = await fetch('https://dummyjson.com/recipes/?limit=4');
 
     if(!res.ok){
