@@ -18,7 +18,7 @@ import FetchErrorSingle from "./pages/Recipe/FetchErrorSingle";
 const customRouter = createBrowserRouter(
   createRoutesFromElements(
 
-    <Route path="/react-router" element={<RootLayout />}>
+    <Route path="/" element={<RootLayout />}>
 
       <Route index element={<Home />} />
 
