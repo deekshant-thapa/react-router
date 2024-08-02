@@ -188,7 +188,7 @@ nav ul{
 
 .hgroup-wrap nav ul{
   padding-bottom: 15px;
-  border-bottom: 0.1px solid var(--white);
+  border-bottom: 1px solid var(--white);
 }
 
 nav a {

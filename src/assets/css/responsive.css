@@ -1,0 +1,61 @@
+@media only screen and (max-width: 992px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .site-branding a {
+        font-size: 26px;
+    }
+    .site-branding{
+        margin-bottom: 15px;
+    }
+    .hgroup-wrap {
+        padding: 15px 0;
+    }
+    .hgroup-wrap nav a {
+        font-size: 16px;
+    }
+    .hgroup-wrap nav ul{
+        padding-bottom: 10px;
+    }
+    h1,h2,h3,h4{
+        font-size: 20px;
+    }
+    .single-recipe-detail .featured-image {
+        max-width: 220px;
+    }
+    .single-recipe-detail .recipe-preparation {
+        width: calc(100% - 220px);
+    }
+}
+
+@media only screen and (max-width: 575px){
+    body, input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="tel"], input[type="url"], input[type="search"], input[type="submit"], textarea, select{
+        font-size: 14px;
+    }
+    .single-recipe-detail .featured-image {
+        max-width: 70%;
+    }
+    .single-recipe-detail .recipe-preparation {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 15px;
+    }
+    p{
+        margin-bottom: 15px;
+    }
+    h1, h2, h3, h4 {
+        font-size: 18px;
+    }
+    .single-recipe-detail .featured-image {
+        max-width: 100%;
+    }
+}
