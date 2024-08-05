@@ -40,7 +40,7 @@ const customRouter = createBrowserRouter(
 
 function App() {
   return (
-    <RouterProvider router={customRouter} />
+    <RouterProvider router={customRouter} basename="/react-router"/>
   );
 }
 
