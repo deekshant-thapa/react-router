@@ -11,8 +11,8 @@ export default function Header(){
                     </div>
                     <nav>
                         <ul>
-                            <li><NavLink to='/recipes'>Recipes</NavLink></li>
-                            <li><NavLink to='/help'>Help</NavLink></li>
+                            <li><NavLink to='recipes'>Recipes</NavLink></li>
+                            <li><NavLink to='help'>Help</NavLink></li>
                         </ul>
                     </nav>
                 </div>
