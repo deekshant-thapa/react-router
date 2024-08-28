@@ -7,7 +7,7 @@ export default function Header(){
             <div className="container">
                 <div className="hgroup-wrap">
                     <div className="site-branding">
-                        <Link to='/'>Recipe Finder</Link>
+                        <Link to='react-router'>Recipe Finder</Link>
                     </div>
                     <nav>
                         <ul>
