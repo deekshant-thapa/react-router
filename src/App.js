@@ -20,7 +20,7 @@ const customRouter = createBrowserRouter(
 
     <Route path="/" element={<RootLayout />}>
 
-      <Route path="react-router" element={<Home />} />
+      <Route index element={<Home />} />
 
       <Route path="recipes" element={<RecipesLayout/>} >
         <Route index element={<Recipes/>} loader={recipesLoader} errorElement={<FetchError/>} />
