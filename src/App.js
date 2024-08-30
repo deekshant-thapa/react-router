@@ -1,4 +1,4 @@
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
+import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 
 // layouts
 import RootLayout from "./layouts.js/RootLayout";
@@ -35,12 +35,15 @@ const customRouter = createBrowserRouter(
       <Route path="*" element={<NotFound/>}/>
 
     </Route>
-  )
+  ),
+  {
+    basename: '/reactRouter'
+  }
 )
 
 function App() {
   return (
-    <RouterProvider router={customRouter} />
+    <RouterProvider router={customRouter}/>
   );
 }
 
